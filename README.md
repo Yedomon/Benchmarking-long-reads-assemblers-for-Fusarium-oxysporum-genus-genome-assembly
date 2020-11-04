@@ -20,11 +20,11 @@ Genomics approach in the study of biodegradation mechanism of plastic waste in A
 
 Genomics approach in the study of biodegradation mechanism of plastic waste beyond Africa
 
-[01](https://openventio.org/wp-content/uploads/Degradation-of-Plastic-Materials-Using-Micro-Organisms-A-Review-PHOJ-4-136.pdf)
-[02](https://www.nature.com/articles/s41598-019-41448-y)
-[03](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6859810/pdf/baz119.pdf)
-[04](https://applbiolchem.springeropen.com/articles/10.1186/s13765-020-00511-3)
-[05](https://pubs.rsc.org/en/content/articlelanding/2020/gc/d0gc01647k#!divAbstract)
-[06](https://www.frontiersin.org/articles/10.3389/fmicb.2020.00442/full)
-[07](https://www.mdpi.com/2076-2607/7/10/379) | genome of a plastic eater
-[08](https://www.sciencedirect.com/science/article/pii/S0025326X19308896) | Marine metagenomics for plastic 
+- [01](https://openventio.org/wp-content/uploads/Degradation-of-Plastic-Materials-Using-Micro-Organisms-A-Review-PHOJ-4-136.pdf)
+- [02](https://www.nature.com/articles/s41598-019-41448-y)
+- [03](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6859810/pdf/baz119.pdf)
+- [04](https://applbiolchem.springeropen.com/articles/10.1186/s13765-020-00511-3)
+- [05](https://pubs.rsc.org/en/content/articlelanding/2020/gc/d0gc01647k#!divAbstract)
+- [06](https://www.frontiersin.org/articles/10.3389/fmicb.2020.00442/full)
+- [07](https://www.mdpi.com/2076-2607/7/10/379) | genome of a plastic eater
+- [08](https://www.sciencedirect.com/science/article/pii/S0025326X19308896) | Marine metagenomics for plastic 
