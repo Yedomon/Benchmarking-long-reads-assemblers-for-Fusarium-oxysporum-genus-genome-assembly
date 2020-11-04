@@ -32,7 +32,7 @@ Genomics approach in the study of biodegradation mechanism of plastic waste beyo
 
 Write oh
 
-The state-of-art in genomics field for plastic waste management relied on the comprehension of the microorganisms interactions with the polymers. The general principle of a biodegradation of a polymer can be summarized in the "attach-grow-degrade" maner <sup>[[1]](#Fesseha et al. 2019)</sup>. Depending on the environment, the polymers biodegradation due to the microorganisms (bascteria, fungi) can occur under aerobic, anerobic or partial aerobic conditions <sup>[[2]](#Pryanka et al. 2011)</sup>. In fact, polymers degrade naturally under aerobic conditions. However, in landfill or sediment, the biodegration process is performed under anaerobic conditions. In the case of organic substrate such as soil and compost, the degration rely on a partial aerobic conditions.
+The state-of-art in genomics field for plastic waste management relied on the comprehension of the microorganisms interactions with the polymers. The general principle of a biodegradation of a polymer can be summarized in the "attach-grow-degrade" maner <sup>[[1]]()</sup>. Depending on the environment, the polymers biodegradation due to the microorganisms (bascteria, fungi) can occur under aerobic, anerobic or partial aerobic conditions <sup>[[2]]()</sup>. In fact, polymers degrade naturally under aerobic conditions. However, in landfill or sediment, the biodegration process is performed under anaerobic conditions. In the case of organic substrate such as soil and compost, the degration rely on a partial aerobic conditions.
 
 <a name="Fesseha et al. 2019">[1]</a>:https://openventio.org/wp-content/uploads/Degradation-of-Plastic-Materials-Using-Micro-Organisms-A-Review-PHOJ-4-136.pdf
 
