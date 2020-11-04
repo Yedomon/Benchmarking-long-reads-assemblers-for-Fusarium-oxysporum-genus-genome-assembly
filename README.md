@@ -12,3 +12,12 @@ Review
 
 
 - #### [03.Article.2020.An assessment of the genomics, comparative genomics and cellulose degradation potential of Mucilaginibacter polytrichastri strain RG4-7](https://www.sciencedirect.com/science/article/pii/S0960852419316190) | Example application of microbes for waste management
+
+
+Title 5: Genomics approach to plastic waste management 
+
+Genomics approach in the study of biodegradation mechanism of plastic waste in Africa
+
+Genomics approach in the study of biodegradation mechanism of plastic waste beyond Africa
+
+
