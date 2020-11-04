@@ -50,5 +50,14 @@ Among microorganisms that are involved un the polymers degradation, bacterial an
 
 
 
+Out.
+
+[Insert ref in markdown](https://blog.sakuragawa.moe/adding-footnotes-to-github-flavored-markdown/)
+
+
+
+
+
+
 
 
