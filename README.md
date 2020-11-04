@@ -39,9 +39,9 @@ Among microorganisms that are involved un the polymers degradation, bacterial an
 
 <a name=''>[1]</a>:https://openventio.org/wp-content/uploads/Degradation-of-Plastic-Materials-Using-Micro-Organisms-A-Review-PHOJ-4-136.pdf
 
-<a name=''>[]2</a>:https://www.hilarispublisher.com/open-access/biodegradability-of-polythene-and-plastic-by-the-help-of-microorganism-a-way-for-brighter-future-2161-0525.1000111.pdf
+<a name=''>[2]</a>:https://www.hilarispublisher.com/open-access/biodegradability-of-polythene-and-plastic-by-the-help-of-microorganism-a-way-for-brighter-future-2161-0525.1000111.pdf
 
-<a name=''>[]3</a>:https://link.springer.com/article/10.1007%2Fs10924-012-0456-z
+<a name=''>[3]</a>:https://link.springer.com/article/10.1007%2Fs10924-012-0456-z
 
 
 
