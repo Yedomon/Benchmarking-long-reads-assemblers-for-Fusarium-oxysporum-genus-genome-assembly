@@ -32,10 +32,19 @@ Genomics approach in the study of biodegradation mechanism of plastic waste beyo
 
 Write oh
 
-The state-of-art in genomics field for plastic waste management relied on the comprehension of the microorganisms interactions with the polymers. The general principle of a biodegradation of a polymer can be summarized in the "attach-grow-degrade" maner <sup>[[1]]()</sup>. Depending on the environment, the polymers biodegradation can occur under aerobic, anerobic or partial aerobic conditions <sup>[[2]]()</sup>. In fact, polymers degrade naturally under aerobic conditions. However, in landfill or sediment, the biodegration process is performed under anaerobic conditions. In the case of organic substrate such as soil and compost, the degration rely on a partial aerobic conditions.
+The state-of-art in genomics field for plastic waste management relied on the comprehension of the microorganisms interactions with the polymers. The general principle of a biodegradation of a polymer can be summarized in the "attach-grow-degrade" maner <sup>[[1]]()</sup>. Depending on the environment, the polymers biodegradation can occur under aerobic, anerobic or partial aerobic conditions <sup>[[2]]()</sup>. In fact, polymers degrade naturally under aerobic conditions. However, in landfill or sediment, the biodegration process is performed under anaerobic conditions. In the case of organic substrate such as soil and compost, the degration rely on a partial aerobic conditions. The microorganism convert the polymer into methance, dioxyde of carbone and water<sup>[[5]]()</sup>.
 
 
-Among microorganisms that are involved un the polymers degradation, bacterial and fungal types are the most reported <sup>[[3]]()</sup>. The advent of high-throughput sequencing technology enables to decifer the functionnal bioprocesses related to plastic biodegradation.
+Among microorganisms that are involved un the polymers degradation, Actinomycetes, Bacteria and Fungi are the most reported <sup>[[3]]()</sup>,<sup>[[4]]()</sup> . The advent of high-throughput sequencing technology enables to decifer the functionnal bioprocesses related to plastic biodegradation. 
+
+# Bacterial warroiors for plastics degradation
+
+
+
+
+# Fungal warriors for plastics degradation
+
+Fungal microorganisms also 
 
 
 
@@ -45,8 +54,10 @@ Among microorganisms that are involved un the polymers degradation, bacterial an
 
 <a name=''>[3]</a>:https://link.springer.com/article/10.1007%2Fs10924-012-0456-z
 
+<a name=''>[4]</a>:Gu, J., Ford, T. E. & Mitchell, R. Microbiological corrosion of concrete, In Uhlig’s corrosion handbook (2nd edition) 477–491 (John Wiley & Sons, 2000).
 
 
+<a name=''>[5]</a>:Shah, A. A., Hasan, F., Hameed, A. & Ahmed, S. Biological degradation of plastics: a comprehensive review. Biotechnology Advances 26, 246–265 (2008).
 
 
 
