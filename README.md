@@ -28,6 +28,7 @@ Genomics approach in the study of biodegradation mechanism of plastic waste beyo
 - [06](https://www.frontiersin.org/articles/10.3389/fmicb.2020.00442/full)
 - [07](https://www.mdpi.com/2076-2607/7/10/379) | genome of a plastic eater
 - [08](https://www.sciencedirect.com/science/article/pii/S0025326X19308896) | Marine metagenomics for plastic 
+- [Fungal bio degrader](https://www.sciencedirect.com/science/article/pii/B9780128210079000048)
 
 
 Write oh
