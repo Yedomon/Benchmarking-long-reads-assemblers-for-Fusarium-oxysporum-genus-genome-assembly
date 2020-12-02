@@ -9,7 +9,7 @@
 
 ####  rice [example](https://www.biorxiv.org/content/10.1101/2020.02.13.948489v1.full.pdf)
 
-#### Example [mixte](https://academic.oup.com/bib/article/20/3/866/4590140)
+#### Example [mixte](https://academic.oup.com/bib/article/20/3/866/4590140) | Publish my work [here?](https://academic.oup.com/bib/pages/About)
 
 
 
