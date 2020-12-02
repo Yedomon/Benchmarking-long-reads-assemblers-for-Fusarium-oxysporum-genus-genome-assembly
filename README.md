@@ -22,7 +22,7 @@
 #### Twelve steps for assembly genome [project](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1008325)
 
 
-#### [High-Quality Genome Assembly of Fusarium oxysporum f. sp. lini](https://www.frontiersin.org/articles/10.3389/fgene.2020.00959/full) | [https://www.frontiersin.org/articles/10.3389/fgene.2020.00959/full](https://apsjournals.apsnet.org/doi/pdf/10.1094/MPMI-05-20-0130-SC)
+#### [High-Quality Genome Assembly of Fusarium oxysporum f. sp. lini](https://www.frontiersin.org/articles/10.3389/fgene.2020.00959/full) | [The Genome Sequence of Five Highly Pathogenic Isolates of Fusarium oxysporum f. sp. lini](https://apsjournals.apsnet.org/doi/pdf/10.1094/MPMI-05-20-0130-SC)
 
 
 
