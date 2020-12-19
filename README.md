@@ -1,5 +1,13 @@
 #### Benchmarking 
 
+#### comparison hi-fi and pacbio using rice [example](https://academic.oup.com/gigascience/article/9/12/giaa123/6034784)
+
+
+`Contiguity of the ONT and PB assemblies. (a) Treemaps for contig length difference between the ONT` How to do [tree maps](https://www.r-graph-gallery.com/234-a-very-basic-treemap.html)
+
+
+
+
 
 #### prokaryote [example](https://f1000research.com/articles/8-2138)
 
