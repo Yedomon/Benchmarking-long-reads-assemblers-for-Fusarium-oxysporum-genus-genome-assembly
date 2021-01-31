@@ -35,7 +35,153 @@
 
 
 
+# I have a hard time to install NECAT due to the updating of the perl 
 
+
+
+First i followwed the instruction from the developper
+
+
+
+```
+
+$ wget https://github.com/xiaochuanle/NECAT/releases/download/v0.0.1_update20200803/necat_20200803_Linux-amd64.tar.gz
+$ tar xzvf necat_20200803_Linux-amd64.tar.gz
+$ cd NECAT/Linux-amd64/bin
+$ export PATH=$PATH:$(pwd)
+
+```
+
+
+But when 
+
+
+
+I got this error
+
+
+
+
+```
+
+syntax error at /home/kplee/programs/NECAT/Linux-amd64/bin/Plgd/Project.pm line 51, near "$cfg{"
+Global symbol "%env" requires explicit package name at /home/kplee/programs/NECAT/Linux-amd64/bin/Plgd/Project.pm line 52.
+Global symbol "%env" requires explicit package name at /home/kplee/programs/NECAT/Linux-amd64/bin/Plgd/Project.pm line 55.
+Global symbol "%env" requires explicit package name at /home/kplee/programs/NECAT/Linux-amd64/bin/Plgd/Project.pm line 56.
+syntax error at /home/kplee/programs/NECAT/Linux-amd64/bin/Plgd/Project.pm line 57, near "}"
+syntax error at /home/kplee/programs/NECAT/Linux-amd64/bin/Plgd/Project.pm line 84, near "$env{"
+Global symbol "$cfg" requires explicit package name at /home/kplee/programs/NECAT/Linux-amd64/bin/Plgd/Project.pm line 84.
+Global symbol "@jobs" requires explicit package name at /home/kplee/programs/NECAT/Linux-amd64/bin/Plgd/Project.pm line 89.
+Global symbol "$prjDir" requires explicit package name at /home/kplee/programs/NECAT/Linux-amd64/bin/Plgd/Project.pm line 95.
+Global symbol "$env" requires explicit package name at /home/kplee/programs/NECAT/Linux-amd64/bin/Plgd/Project.pm line 101.
+Global symbol "$env" requires explicit package name at /home/kplee/programs/NECAT/Linux-amd64/bin/Plgd/Project.pm line 115.
+Global symbol "$cfg" requires explicit package name at /home/kplee/programs/NECAT/Linux-amd64/bin/Plgd/Project.pm line 115.
+Global symbol "$cfg" requires explicit package name at /home/kplee/programs/NECAT/Linux-amd64/bin/Plgd/Project.pm line 121.
+syntax error at /home/kplee/programs/NECAT/Linux-amd64/bin/Plgd/Project.pm line 121, near "$cfg{"
+/home/kplee/programs/NECAT/Linux-amd64/bin/Plgd/Project.pm has too many errors.
+Compilation failed in require at ./necat.pl line 13.
+BEGIN failed--compilation aborted at ./necat.pl line 13.
+
+
+
+```
+
+
+
+
+first I install perl using
+
+
+```bash
+
+sudo yum install perl
+
+```
+
+perl -v show that we have 5.16
+
+
+```
+This is perl 5, version 16, subversion 3 (v5.16.3) built for x86_64-linux-thread-multi
+(with 41 registered patches, see perl -V for more detail)
+
+Copyright 1987-2012, Larry Wall
+
+Perl may be copied only under the terms of either the Artistic License or the
+GNU General Public License, which may be found in the Perl 5 source kit.
+
+Complete documentation for Perl, including FAQ lists, should be found on
+this system using "man perl" or "perldoc perl".  If you have access to the
+Internet, point your browser at http://www.perl.org/, the Perl Home Page.
+
+
+
+
+
+```
+
+
+to update to 5.26 I found this [page](https://www.softwarecollections.org/en/scls/rhscl/rh-perl526/)
+
+
+```bash
+
+# 1. Install a package with repository for your system:
+# On CentOS, install package centos-release-scl available in CentOS repository:
+$ sudo yum install centos-release-scl
+
+# On RHEL, enable RHSCL repository for you system:
+# $ sudo yum-config-manager --enable rhel-server-rhscl-7-rpms
+
+# 2. Install the collection:
+$ sudo yum install rh-perl526
+
+# 3. Start using the software collection:
+$ scl enable rh-perl526 bash
+
+
+```
+
+and then I checked
+
+perl -v and bingo I got
+
+
+```
+
+This is perl 5, version 26, subversion 3 (v5.26.3) built for x86_64-linux-thread-multi
+(with 27 registered patches, see perl -V for more detail)
+
+Copyright 1987-2018, Larry Wall
+
+Perl may be copied only under the terms of either the Artistic License or the
+GNU General Public License, which may be found in the Perl 5 source kit.
+
+Complete documentation for Perl, including FAQ lists, should be found on
+this system using "man perl" or "perldoc perl".  If you have access to the
+Internet, point your browser at http://www.perl.org/, the Perl Home Page.
+
+```
+
+
+so I ran 
+
+
+./necat.pl
+
+
+and I got this
+
+```
+
+Smartmatch is experimental at /home/kplee/programs/NECAT/Linux-amd64/bin/Plgd/Project.pm line 263.
+Usage: necat.pl correct|assemble|bridge|config cfg_fname
+    correct:     correct rawreads
+    assemble:    generate contigs
+    bridge:      bridge contigs
+    config:      generate default config file
+
+```
 
 
 
