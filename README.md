@@ -1,5 +1,129 @@
 #### Benchmarking 
 
+
+
+- #### [Haplotype-resolved de novo assembly with phased
+assembly graphs](https://arxiv.org/abs/2008.01237)  | [nature methods redcube file](https://www.nature.com/articles/s41592-020-01056-5.epdf?sharing_token=gOs_Vf3Mp87PwxwOWBR9TdRgN0jAjWel9jnR3ZoTv0PEptI9_4gtBx6ljxr0whf0cYzRf6jNFncOK-h9I2pNj7zgjAjzTvz5DZ6OR5woNG7_ZnL517PlPbK8h-g9oucxb3hTlS62DXkNKpafRKz0oqAvl8bMAcGgXyVIDKdNBME%3D&s=03)
+
+```bash
+Supplementary Material for
+“Haplotype-resolved de novo assembly with phased assembly graphs”
+S1 Software commands
+S1.1 Hifiasm
+To produce primary assemblies of homozygous samples (M. musculus, Z. mays and CHM13), hifiasm (version 0.7) was run with the following command which does not purge haplotig duplications:
+hifiasm -o <outputPrefix> -t <nThreads> -l0 <HiFi-reads.fasta>
+For heterozygous samples, hifiasm was run with the following command:
+hifiasm -o <outputPrefix> -t <nThreads> <HiFi-reads.fasta>
+We added ‘-D10’ for the octoploid F. × ananassa because the default k-mer cutoff seems too low:
+hifiasm -o <outputPrefix> -t <nThreads> -D10 <HiFi-reads.fasta>
+For trio-binning assembly, we first built the paternal trio index and the maternal trio index by yak (version
+r55) with the following commands:
+yak count -b37 -t <nThreads> -o <pat.yak> <paternal-short-reads.fastq>
+yak count -b37 -t <nThreads> -o <mat.yak> <maternal-short-reads.fastq>
+and then we produced the paternal assembly and the maternal assembly with the following command:
+hifiasm -o <outputPrefix> -t <nThreads> -1 <pat.yak> -2 <mat.yak> <HiFi-reads.fasta>
+S1.2 Falcon-Unzip
+Falcon-kit (version 1.8.1) was run with the following HiFi-specific options:
+length cutoff pr = 8000
+ovlp daligner option = -k24 -h1024 -e.98 -l1500 -s100
+ovlp HPCdaligner option = -v -B128 -M24
+ovlp DBsplit option = -s400
+overlap filtering setting = --max-diff 200 --max-cov 200 --min-cov 2 --n-core 24 --min-idt
+98 --ignore-indels
+Falcon-unzip-kit (version 1.3.7) was run with default options.
+S1.3 HiCanu
+For primary assembly, HiCanu (version 2.0) was run with the following command line:
+canu -p asm -d <outDir> genomeSize=<GSize> useGrid=false maxThreads=<nThreads> \
+-pacbio-hifi <HiFi-reads.fasta>
+The contigs labeled by ‘suggestedBubbles=yes’ were removed from the primary assembly. For triobinning assembly, we ran HiCanu in two steps as recommended. We partitioned the HiFi reads by parental
+short reads with the following command:
+canu -haplotype -p asm -d <outDir> genomeSize=<GSize> useGrid=false \
+maxThreads=<nThreads> -haplotypePat <pat-reads.fq> -haplotypeMat <mat-reads.fq> \
+-pacbio-raw <HiFi-reads.fasta>
+Note that ‘-pacbio-raw’ was used to partition HiFi reads followed the document of HiCanu. We then
+perform HiCanu assemblies on partitioned reads.
+1
+arXiv:2008.01237v1 [q-bio.GN] 3 Aug 2020
+S1.4 Peregrine
+For primary assembly, Peregrine (version 0.1.6.1) was run with the following command, where 48 is the
+number of threads in use:
+docker run -it -v <workDir>:/wd --user $(id -u):$(id -g) cschin/peregrine:0.1.6.1 asm \
+/wd/Input.fnfo 48 48 48 48 48 48 48 48 48 --with-consensus --with-alt --shimmer-r 3 \
+--best n ovlp 8 --output <outDir>
+For trio-binning assembly, we first used HiCanu to partition HiFi reads by parental short reads, and then
+assembled the each haplotype individually by Peregrine.
+S1.5 Purge dups
+Purge dups (version 1.2.3) was used to postprocess the output primary assemblies of HiCanu for all heterozygous samples. The commands are as follows:
+minimap2 -I6G -xmap-pb <contigs.fa> <HiFi-reads.fasta> -t <nThreads> > <read-aln.paf>
+bin/pbcstat <read-aln.paf>
+bin/calcuts PB.stat > cutoffs
+bin/split fa <contigs.fa> > <split.fa>
+minimap2 -I6G -xasm5 -DP <split.fa> <split.fa> -t <nThreads> > <ctg-aln.paf>
+bin/purge dups -2 -T cutoffs -c PB.base.cov <ctg-aln.paf> > <dups.bed>
+bin/get seqs <dups.bed> <contigs.fa>
+Since running Purge Dups in default cannot produce primary assembly of HiCanu with right size for HG002,
+we manually adjusted the cutoffs thresholds of Purge Dups as follows “5 7 11 30 22 42”.
+S1.6 Running asmgene
+We aligned the cDNAs to the reference genome and contigs by minimap2 r974 and evaluated the gene
+completeness with paftools.js from the minimap2 package:
+minimap2 -cxsplice:hq -t <nThreads> <contigs.fa> <cDNAs.fa> > <aln.paf>
+paftools.js asmgene -i.97 <ref.paf> <asm.paf>
+We set the sequence identity threshold to be 97% with ‘-i.97’ to tolerate low per-base accuracy of ONT
+assemblies. For trio binning assemblies, we added option ‘-a’ to evaluate genes mapped to the autosomes
+only. When evaluating multi-copy genes retained in an assembly, we replaced ‘-i.97’ to ‘-i.99’ to increase the resolution.
+S1.7 Computing NGA50
+We used minigraph (version 0.10-dirty-r361) and paftools (version 2.17-r974-dirty) to calculate the NGA50
+of each asssembly:
+minigraph -xasm -K1.9g --show-unmap=yes -t <nThreads> <ref.fa> <asm.fa> > <asm.paf>
+paftools.js asmstat <ref.fa.fai> <asm.paf>
+In comparison to minimap2, minigraph tends to generate longer alignments and is more robust to highly
+variable regions.
+S1.8 BUSCO
+BUSCO (version 3.0.2) was used with the following command:
+python3 run BUSCO.py -i <asm.fa> -m genome -o <outDir> -c <nThreads> -l <lineage dataset>
+where ‘lineage dataset’ is set to tetrapoda for R. muscosa and set to embryophyta for F. × ananassa
+and S. sempervirens.
+2
+S1.9 Determining resolved BACs
+The resolution of BAC for different assemblies was evaluated using the pipeline at: https://github.
+com/skoren/bacValidation, except that we added option ‘-I6g’ to minimap2. The BAC libraries for
+CHM13 and HG00733 can be found at https://www.ncbi.nlm.nih.gov/nuccore/?term=VMRC59+
+and+complete and https://www.ncbi.nlm.nih.gov/nuccore/?term=VMRC62+and+complete, respectively.
+S1.10 Running yak evaluation
+We used yak (version r55) to measure the per-base consensus accuracy (QV), the switch error rate and the
+hamming error rate. For QV evaluation, we first built the index for the short reads coming from the same
+sample:
+yak count -b37 -t <nThreads> -o <sr.yak> <short-reads.fastq>
+yak qv -t <nThreads> <sr.yak> <contigs.fa>
+To evaluate the switch error rate and the hamming error rate, we first built the indexes from the paternal
+short reads as in section S1.1 and then estimate k-mer based error rates as follows:
+yak trioeval -t <nThreads> <pak.yak> <mat.yak> <contigs.fa>
+S1.11 Dipcall
+For the male sample HG002, we ran dipcall (version 0.1) as follows:
+dipcall.kit/run-dipcall -x dipcall.kit/hs37d5.PAR.bed <prefix> hs37d5.fa \
+<pat-asm.fa> <mat-asm.fa> > <prefix.mak>
+make -j2 -f <prefix.mak>
+For the female sample HG00733, we removed option ‘-x’. We used the GRCh37 variant of ‘hs37d5.fa’
+here because GIAB works best with hs37d5.
+S1.12 Evaluating collapsed misassemblies for inbred samples
+We used scripts at: https://github.com/lh3/CHM-eval/blob/master/misc/clustreg.js, and https:
+//github.com/lh3/CHM-eval/blob/master/misc/select-collapse-het.js. The commands are
+as follows:
+minimap2 -axasm20 -t <contigs.fa> <HiFi-reads.fasta> | samtools sort -o <aln.bam> -
+htsbox pileup -vcf <contigs.fa> -q20 -Q20 -l5000 -S5000 -s5 <aln.bam> > <var.vcf>
+./select-collapse-het.js -c <readCoverage> <var.vcf> | ./clustreg.js -n10
+where ‘-l’ and ‘-S’ filter out alignments short than 5kb.
+
+
+```
+
+
+
+
+
+
+
+
 #### comparison hi-fi and pacbio using rice [example](https://academic.oup.com/gigascience/article/9/12/giaa123/6034784)
 
 
