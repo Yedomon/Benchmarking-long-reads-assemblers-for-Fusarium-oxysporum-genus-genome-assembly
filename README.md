@@ -2,9 +2,11 @@
 
 
 
-- #### [Haplotype-resolved de novo assembly with phased
-assembly graphs](https://arxiv.org/abs/2008.01237)  | [nature methods redcube file](https://www.nature.com/articles/s41592-020-01056-5.epdf?sharing_token=gOs_Vf3Mp87PwxwOWBR9TdRgN0jAjWel9jnR3ZoTv0PEptI9_4gtBx6ljxr0whf0cYzRf6jNFncOK-h9I2pNj7zgjAjzTvz5DZ6OR5woNG7_ZnL517PlPbK8h-g9oucxb3hTlS62DXkNKpafRKz0oqAvl8bMAcGgXyVIDKdNBME%3D&s=03)
+- #### [Haplotype-resolved de novo assembly with phased assembly graphs](https://arxiv.org/abs/2008.01237)  | [nature methods redcube file](https://www.nature.com/articles/s41592-020-01056-5.epdf?sharing_token=gOs_Vf3Mp87PwxwOWBR9TdRgN0jAjWel9jnR3ZoTv0PEptI9_4gtBx6ljxr0whf0cYzRf6jNFncOK-h9I2pNj7zgjAjzTvz5DZ6OR5woNG7_ZnL517PlPbK8h-g9oucxb3hTlS62DXkNKpafRKz0oqAvl8bMAcGgXyVIDKdNBME%3D&s=03)
 
+
+
+[Heng Li lab](https://hlilab.github.io/)
 
 
 Supplementary Material for
