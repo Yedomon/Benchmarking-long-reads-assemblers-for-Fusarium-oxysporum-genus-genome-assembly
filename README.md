@@ -1,5 +1,7 @@
 #### Benchmarking 
 
+- Nanopore only benchmarking Nextdenovo mentionned [Benchmarking Oxford Nanopore read assemblers for high-quality molluscan genomes](https://www.biorxiv.org/content/10.1101/2020.12.31.424979v1.full)
+
 
 
 - Good for writing material and methods | [Ultracontinuous single haplotype genome assemblies for the domestic cat (Felis
