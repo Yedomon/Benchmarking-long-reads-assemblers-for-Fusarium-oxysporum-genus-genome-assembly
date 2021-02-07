@@ -2,7 +2,50 @@
 
 
 
-- Very nice paper of benchmarking with nice gggplot2 graph on Adineta vaga paper [biorvx](https://www.biorxiv.org/content/10.1101/2020.03.16.993428v2.full.pdf)
+- Very nice paper of benchmarking with nice gggplot2 graph on Adineta vaga paper [Overcoming uncollapsed haplotypes in long-read
+2 assemblies of non-model organisms](https://www.biorxiv.org/content/10.1101/2020.03.16.993428v2.full.pdf)
+
+
+
+
+Fig1: Statistics of raw assemblies obtained from the full PacBio dataset (raw assemblies), with a preliminary read-filtering step (keeping only reads larger than 15 kb), or a subsequent removal of uncollapsed haplotypes with HaploMerger2, purge_dups, or purge_haplotigs. a) Assembly scores for size, N50, completeness and haploidy. b) Long-read coverage distribution over the contigs.
+
+![fig1](https://www.biorxiv.org/content/biorxiv/early/2020/12/15/2020.03.16.993428/F1.large.jpg?width=800&height=600&carousel=1)
+
+
+
+
+Fig3:  Statistics of the PacBio and Nanopore assemblies depending on sequencing depth, with a) assembly size, b) N50, c) complete single-copy BUSCOs and d) haploidy. The assemblies were ran on five random subsamplings of the long-read datasets.
+
+
+![fig2](https://www.biorxiv.org/content/biorxiv/early/2020/12/15/2020.03.16.993428/F3.large.jpg?width=800&height=600&carousel=1)
+
+
+
+
+
+Fig4: Computational resources (RAM and CPU time) used by the assemblers. a) Maximum RAM usage and b) mean CPU time depending on sequencing depth. Canu and NextDenovo were not included in this comparison as they were run on different machines.
+
+
+![fig3](https://www.biorxiv.org/content/biorxiv/early/2020/12/15/2020.03.16.993428/F4.large.jpg?width=800&height=600&carousel=1)
+
+
+
+
+
+
+
+- Awesome review of long reads sequencing assembly [Piercing the dark matter: bioinformatics of long-range sequencing and mapping](https://www.nature.com/articles/s41576-018-0003-4)
+
+
+
+
+
+
+
+
+
+
 
 
 - #### [Haplotype-resolved de novo assembly with phased assembly graphs](https://arxiv.org/abs/2008.01237)  | [nature methods redcube file](https://www.nature.com/articles/s41592-020-01056-5.epdf?sharing_token=gOs_Vf3Mp87PwxwOWBR9TdRgN0jAjWel9jnR3ZoTv0PEptI9_4gtBx6ljxr0whf0cYzRf6jNFncOK-h9I2pNj7zgjAjzTvz5DZ6OR5woNG7_ZnL517PlPbK8h-g9oucxb3hTlS62DXkNKpafRKz0oqAvl8bMAcGgXyVIDKdNBME%3D&s=03)
