@@ -2,6 +2,10 @@
 
 
 
+- Good for writing material and methods | [Ultracontinuous single haplotype genome assemblies for the domestic cat (Felis
+catus) and Asian leopard cat (Prionailurus bengalensis)](https://pubmed.ncbi.nlm.nih.gov/33305796/)
+
+
 - Very nice paper of benchmarking with nice gggplot2 graph on Adineta vaga paper [Overcoming uncollapsed haplotypes in long-read
 2 assemblies of non-model organisms](https://www.biorxiv.org/content/10.1101/2020.03.16.993428v2.full.pdf)
 
