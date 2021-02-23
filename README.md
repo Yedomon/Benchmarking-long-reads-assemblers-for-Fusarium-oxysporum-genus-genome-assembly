@@ -1,5 +1,10 @@
 #### Benchmarking 
 
+
+
+- #### [Benchmarking of long-read correction methods](https://academic.oup.com/nargab/article/2/2/lqaa037/5843804)
+- #### [A comprehensive evaluation of long read error correction methods](https://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-020-07227-0)
+
 - Nanopore only benchmarking Nextdenovo mentionned [Benchmarking Oxford Nanopore read assemblers for high-quality molluscan genomes](https://www.biorxiv.org/content/10.1101/2020.12.31.424979v1.full)
 
 
