@@ -1,5 +1,9 @@
 #### Benchmarking 
 
+- #### [Plant Genomics & Gene Editing Congress: USA](https://www.global-engage.com/event/plant-genomics/)
+
+- #### [A high-quality chromosomal genome assembly of Diospyros oleifera Cheng](https://academic.oup.com/gigascience/article/9/1/giz164/5707454)
+
 - #### GALA: gap-free chromosome-scale assembly with long reads [Preprint](https://www.biorxiv.org/content/10.1101/2020.05.15.097428v2.full.pdf) | [Github](https://github.com/ganlab/gala)
 
 
