@@ -1,5 +1,6 @@
 #### Benchmarking 
 
+- #### GALA: gap-free chromosome-scale assembly with long reads [Preprint](https://www.biorxiv.org/content/10.1101/2020.05.15.097428v2.full.pdf) | [Github](https://github.com/ganlab/gala)
 
 
 - #### [Improvements in the Sequencing and Assembly of Plant Genomes](https://www.biorxiv.org/content/10.1101/2021.01.22.427724v1.full)
