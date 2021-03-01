@@ -1,5 +1,13 @@
 #### Benchmarking 
 
+
+
+- #### [Improvements in the Sequencing and Assembly of Plant Genomes](https://www.biorxiv.org/content/10.1101/2021.01.22.427724v1.full)
+
+
+They just used available datasets. Such a nice idea!
+
+
 - #### [Benchmarking Oxford Nanopore read assemblers for high-quality molluscan genomes](https://www.biorxiv.org/content/10.1101/2020.12.31.424979v1.full)
 
 
