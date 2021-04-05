@@ -1,5 +1,8 @@
 #### Benchmarking 
 
+Finaly Valentine Murigneux published her benchmarking work in Gigascience. | Awesome | [Paper](https://academic.oup.com/gigascience/article/9/12/giaa146/6042729)
+
+
 - #### [Plant Genomics & Gene Editing Congress: USA](https://www.global-engage.com/event/plant-genomics/)
 
 - #### [A high-quality chromosomal genome assembly of Diospyros oleifera Cheng](https://academic.oup.com/gigascience/article/9/1/giz164/5707454)
